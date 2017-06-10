@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Long url:</strong>
+  <%= @shortner.long_url %>
+</p>
+
+<p>
+  <strong>Short url:</strong>
+  <%= @shortner.short_url %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @shortner.active %>
+</p>
+
+<%= link_to 'Edit', edit_shortner_path(@shortner) %> |
+<%= link_to 'Back', shortners_path %>
